@@ -12,4 +12,4 @@
 
 -- delete from kullanicilar where id in (6,7); -- kullanıclar tablosundan id'si 6 ve 7 olanı sil
 
-select * from kullanicilar
+-- select * from kullanicilar
