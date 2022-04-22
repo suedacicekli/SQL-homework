@@ -1,15 +1,6 @@
--- SELECT * FROM film ORDER BY film_id ASC -- Filmleri ID'lerine göre artan şekilde getir.
-
--- SELECT * FROM film ORDER BY film_id DESC -- Filmleri ID'lerine göre azalan şekilde getir.
-
--- select * from actor limit 5 -- Aktör tablosundan 5 kayıt getir.
-
--- select * from actor where first_name = 'Nick' limit 5 -- Aktör tablosundan ismi Nick olan 5 kayıt getir.
-
--- insert into kullanicilar (name, surname, age) values ('Said Ziya', 'Çağlayan', 6); -- Veri ekleme
-
--- delete from kullanicilar where id = 5; -- kullanıclar tablosundan id'si 5 olanı sil
-
--- delete from kullanicilar where id in (6,7); -- kullanıclar tablosundan id'si 6 ve 7 olanı sil
-
--- select * from kullanicilar
+-- ÖDEV 1 --
+-- SELECT title, description FROM film ;
+-- SELECT * FROM film WHERE length > 60 AND length <75;
+-- SELECT * FROM film WHERE rental_rate = 0.99 AND (replacement_cost =12.99 OR replacement_cost =28.99);
+-- SELECT last_name  FROM customer WHERE first_name = 'Mary';
+-- SELECT * FROM film WHERE NOT length > 50 AND NOT ( rental_rate =2.99 OR rental_rate = 4.99);
