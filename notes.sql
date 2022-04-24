@@ -20,3 +20,13 @@ SELECT country FROM country WHERE country LIKE 'A%a';
 SELECT country FROM country WHERE country LIKE '_____%n';
 SELECT title FROM film WHERE  title ILIKE '%t%t%t%t%' ;
 SELECT * FROM film WHERE title LIKE 'C%' AND length >90 AND rental_rate = 2.99 ;
+
+-- ÖDEV 4
+SELECT DISTINCT replacement_cost FROM film;
+SELECT COUNT(DISTINCT replacement_cost) FROM film ;
+--SELECT title FROM film WHERE title LIKE 'T%' and rating = 'G';
+SELECT COUNT(title) FROM film WHERE title LIKE 'T%' and rating = 'G' ;
+-- SELECT country FROM country WHERE country LIKE '_____'; 5 karakterden oluşan countryler
+SELECT COUNT(country) FROM country WHERE country LIKE '_____'; -- 5 karakterden oluşan countrylerin sayısını verir.
+-- SELECT * FROM city WHERE city ILIKE '%r';  r veya R ile biten city isimlerini verir.
+SELECT COUNT(*) FROM city WHERE city ILIKE '%r';  -- r veya R ile biten city isimlerinin sayısını verir.
