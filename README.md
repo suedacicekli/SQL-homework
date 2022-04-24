@@ -1,2 +1,1 @@
-# dvdrentalHomework
-patika.dev ödevi
+# SQL Homework for PATİKA
