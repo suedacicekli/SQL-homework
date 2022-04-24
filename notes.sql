@@ -30,3 +30,9 @@ SELECT COUNT(title) FROM film WHERE title LIKE 'T%' and rating = 'G' ;
 SELECT COUNT(country) FROM country WHERE country LIKE '_____'; -- 5 karakterden oluşan countrylerin sayısını verir.
 -- SELECT * FROM city WHERE city ILIKE '%r';  r veya R ile biten city isimlerini verir.
 SELECT COUNT(*) FROM city WHERE city ILIKE '%r';  -- r veya R ile biten city isimlerinin sayısını verir.
+
+
+-- ÖDEV5
+SELECT * FROM film WHERE title LIKE '%n' ORDER BY length DESC LIMIT 5;
+SELECT * FROM film WHERE title LIKE '%n' ORDER BY length ASC OFFSET 5 LIMIT 5;
+SELECT * FROm customer WHERE store_id=1 ORDER BY last_name DESC LIMIT 4;
