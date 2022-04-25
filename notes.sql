@@ -36,3 +36,9 @@ SELECT COUNT(*) FROM city WHERE city ILIKE '%r';  -- r veya R ile biten city isi
 SELECT * FROM film WHERE title LIKE '%n' ORDER BY length DESC LIMIT 5;
 SELECT * FROM film WHERE title LIKE '%n' ORDER BY length ASC OFFSET 5 LIMIT 5;
 SELECT * FROm customer WHERE store_id=1 ORDER BY last_name DESC LIMIT 4;
+
+-- ÖDEV 6
+SELECT AVG(rental_rate) FROM film;
+SELECT COUNT(title) FROM film WHERE title ILIKE 'c%';
+SELECT rental_rate,length FROM film WHERE rental_rate = 0.99 ORDER BY length DESC LIMIT 1;
+SELECT COUNT(DISTINCT replacement_cost)  FROM film WHERE length > 150;
